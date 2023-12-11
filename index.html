@@ -48,16 +48,16 @@
                 <a href="index.html" class="block py-2 md:text-dark-indigo bg-dark-indigo text-white text-[16px] rounded md:bg-transparent md:p-0 font-jakarta font-medium" aria-current="page">Home</a>
             </li>
             <li>
-                <a href="#" class="block py-2 md:text-dark-indigo bg-dark-indigo text-white text-[16px] rounded md:bg-transparent md:p-0 font-jakarta font-medium">Jobs</a>
+                <a href="#jobs" class="block py-2 md:text-dark-indigo bg-dark-indigo text-white text-[16px] rounded md:bg-transparent md:p-0 font-jakarta font-medium">Jobs</a>
             </li>
             <li>
-                <a href="#" class="block py-2 md:text-dark-indigo bg-dark-indigo text-white text-[16px] rounded md:bg-transparent md:p-0 font-jakarta font-medium">Category</a>
+                <a href="#category" class="block py-2 md:text-dark-indigo bg-dark-indigo text-white text-[16px] rounded md:bg-transparent md:p-0 font-jakarta font-medium">Category</a>
             </li>
             <li>
                 <a href="#" class="block py-2 md:text-dark-indigo bg-dark-indigo text-white text-[16px] rounded md:bg-transparent md:p-0 font-jakarta font-medium">About</a>
             </li>
             <li>
-                <a href="#" class="block py-2 md:text-dark-indigo bg-dark-indigo text-white text-[16px] rounded md:bg-transparent md:p-0 font-jakarta font-medium">Contact</a>
+                <a href="#contact" class="block py-2 md:text-dark-indigo bg-dark-indigo text-white text-[16px] rounded md:bg-transparent md:p-0 font-jakarta font-medium">Contact</a>
             </li>
         </ul>
     </div>
@@ -79,10 +79,10 @@
 
          <ul class="flex flex-col space-y-5">
              <li><a href="#" class="text-dark-indigo text-[16px] font-jakarta font-medium">Home</a></li>
-             <li><a href="#" class="text-dark-indigo text-[16px] font-jakarta font-medium">Jobs</a></li>
-             <li><a href="#" class="text-dark-indigo text-[16px] font-jakarta font-medium">Category</a></li>
+             <li><a href="#jobs" class="text-dark-indigo text-[16px] font-jakarta font-medium">Jobs</a></li>
+             <li><a href="#category" class="text-dark-indigo text-[16px] font-jakarta font-medium">Category</a></li>
              <li><a href="#" class="text-dark-indigo text-[16px] font-jakarta font-medium">About</a></li>
-             <li><a href="#" class="text-dark-indigo text-[16px] font-jakarta font-medium">Contact</a></li>
+             <li><a href="#contact" class="text-dark-indigo text-[16px] font-jakarta font-medium">Contact</a></li>
          </ul>
 
          <a class="btn-primary" href="#">Join Now</a>
@@ -95,32 +95,6 @@
 </div>
 </header>
 
-<!-- <header class="py-6">
-    <div class="container mx-auto md:relative flex flex-col md:flex-row md:justify-between gap-y-4 md:gap-y-0">
-        <div class="flex justify-center md:justify-normal">
-            <a href="/">
-                <img src="./assets/logo/Group 4174.svg" alt="Jobfin" class="w-[113px] h-[39px]">
-            </a>
-        </div>
-        <div>
-            <ul class="flex flex-col md:flex-row justify-center items-center gap-y-8 md:gap-x-8">
-                <li><a class="text-[16px] font-inter font-medium text-dark-indigo" href="#">Home</a></li>
-                <li><a class="text-[16px] font-inter font-medium text-dark-indigo" href="#">Job</a></li>
-                <li><a class="text-[16px] font-inter font-medium text-dark-indigo" href="#">Category</a></li>
-                <li><a class="text-[16px] font-inter font-medium text-dark-indigo" href="#">About</a></li>
-                <li><a class="text-[16px] font-inter font-medium text-dark-indigo" href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="flex justify-center">
-            <a class="btn-primary" href="#">Join Now</a>
-        </div>
-
-        
-
-        
-
-    </div>
-</header> -->
 
 <!-- Hero section -->
 
@@ -204,7 +178,7 @@
 
 <!--card section-->
 
-<section class="xl:mb-[119px] mb-16 relative">
+<section class="xl:mb-[119px] mb-16 relative" id="category">
     <!--shape-->
     <div class="absolute left-0 top-1/2 -z-10 hidden xl:block">
         <img src="./assets/shape/Rectangle 29.png" alt="" class="">
@@ -408,7 +382,7 @@
 
 <!--Our latest job opportunities-->
 
-<section class="md:mb-[130px]">
+<section class="md:mb-[130px]" id="jobs">
     <!--text-section-->
     <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 w-full mx-auto flex justify-between items-center px-8 xl:px-0">
         <!--left column-->
@@ -936,7 +910,7 @@
 </section>
 
 <!--newsletter-section-->
-<section class="md:mb-[130px] mb-16 mx-8 xl:mx-0">
+<section class="md:mb-[130px] mb-16 mx-8 xl:mx-0" id="contact">
     <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 md:mx-auto flex flex-col justify-center items-center md:h-[422px] h-52 bg-bluish-purple rounded-xl ">
         <div>
             <h2 class="text-white xl:text-[48px] xl:leading-[62px] md:text-[34px] md:leading-normal text-2xl font-jakarta font-bold text-center xl:w-[830px] md:w-[600px] w-[450px]">Subscribe now to stay informed about job trends worldwide</h2>
@@ -1048,6 +1022,16 @@
     </div>
 </footer>
 
+<!--scroll-to-top-btn-->
+
+<button id="to-top-button" onclick="goToTop()" title="Go To Top"
+    class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-bluish-purple hover:bg-dark-indigo text-white text-lg font-semibold transition-colors duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
+    </svg>
+    <span class="sr-only">Go to top</span>
+</button>
+
 <!--swipper-js--->
 
 <script src="./js/swiper-bundle.min.js"></script>
@@ -1056,40 +1040,6 @@
 <script src="./js/main.js"></script>
 
 
-
-
-
-<!-- <script type="module">
-    import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
-
-const keenSlider = new KeenSlider(
-  '#keen-slider',
-  {
-    loop: true,
-    slides: {
-      origin: 'center',
-      perView: 1.25,
-      spacing: 16,
-    },
-    breakpoints: {
-      '(min-width: 1024px)': {
-        slides: {
-          origin: 'auto',
-          perView: 2.5,
-          spacing: 32,
-        },
-      },
-    },
-  },
-  []
-)
-
-const keenSliderPrevious = document.getElementById('keen-slider-previous')
-const keenSliderNext = document.getElementById('keen-slider-next')
-
-keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
-keenSliderNext.addEventListener('click', () => keenSlider.next())
-</script> -->
 
   
     
