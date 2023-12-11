@@ -54,5 +54,86 @@ window.addEventListener('scroll', function() {
   }
 });
 
+//count-up
+
+const valueDisplays = document.querySelectorAll(".num");
+const interval = 500;
+
+const observerOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5, // Adjust this threshold as needed
+};
+
+const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+valueDisplays.forEach((valueDisplay) => {
+  observer.observe(valueDisplay);
+});
+
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      startCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+function startCounter(valueDisplay) {
+  let startValue = 0;
+  const endValue = parseInt(valueDisplay.getAttribute("data-val"), 10);
+  const duration = Math.floor(interval / endValue);
+  const step = Math.ceil(endValue / (interval / 16));
+
+  function updateCounter() {
+    startValue += step;
+    if (startValue >= endValue) {
+      startValue = endValue;
+    }
+
+    valueDisplay.textContent = startValue;
+
+    if (startValue < endValue) {
+      requestAnimationFrame(updateCounter);
+    }
+  }
+
+  updateCounter();
+}
 
 
+// swipper
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  loop: true,
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+    },
+    // when window width is < 768px
+    
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

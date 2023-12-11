@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title Here -->
     <title>Jobfin</title>
+
+    <!--swipper-css-->
+    <link rel="stylesheet" href="./src/swiper-bundle.min.css">
     <!-- CSS link here -->
     <link rel="stylesheet" href="./dist/output.css">
 
     <!-- remix icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css">
 
+    <!--keen-slider-->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" /> -->
+
+    <!--swipper-css-->
+
 </head>
 <body>
     
     <header class="bg-white w-full z-20 top-0 start-0 fixed sticky-header py-6">
         <div class="md:relative">
-            <div class="w-1170 md:flex hidden flex-wrap items-center justify-between mx-auto">
+            <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 flex flex-wrap items-center justify-between mx-auto px-8 xl:px-0">
             <a href="/" class="flex items-center space-x-3">
                 <img src="./assets/logo/Group 4174.svg" class="h-8" alt="Jobfin">
             </a>
@@ -24,12 +33,12 @@
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button type="button" class="text-white bg-bluish-purple hover:bg-bluish-purple font-medium font-inter text-[18px] rounded-[4px] px-6 py-3 text-center">Join Now</button>
 
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">                  
+                <!-- <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">                  
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                     </svg>
-                </button>
+                </button> -->
     
     </div>
     
@@ -58,7 +67,7 @@
          <!-- mobile navbar here -->
     <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] shadow-xl md:hidden transition-all duration-300 z-20">
 
-        <div class="mnav__close-btn bg-dark-indigo w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-xl rounded-br-xl cursor-pointer text-center">
+        <div class="mnav__close-btn bg-dark-indigo w-8 h-8 relative -right-full top-20 flex justify-center items-center rounded-tr-xl rounded-br-xl cursor-pointer text-center">
          <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
         </div> 
 
@@ -117,12 +126,12 @@
 
 
 <section class="w-full">
-    <div class="container mx-auto md:px-14 mt-[196px] mb-[150px] flex flex-col md:flex-row relative">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto xl:mt-[196px] xl:mb-[120px] md:mt-40 md:mb-30 mt-32 mb-20 flex  md:flex-row flex-col md:justify-between px-8 xl:px-0">
         <!-- left column -->
-        <div class="w-1/2">
-            <h1 class="text-dark-indigo md:w-[456px] font-jakarta md:text-[64px] font-semibold md:leading-[78px] leading-normal text-[24px] text-center md:text-left ">Find & Hire Top Talented <br class="block md:hidden" /> From The World.</h1>
-            <p class="md:w-[438px] text-center md:text-left mt-[20px] text-[14px] font-inter font-normal text-rum">Most talented employees and world class companies here</p>
-            <div class="flex justify-between items-center w-[321px] mt-8">
+        <div class="md:w-1/2 w-full md:order-1 order-2">
+            <h1 class="text-dark-indigo xl:w-[456px] md:w-full font-jakarta md:text-[40px] xl:text-[64px] font-semibold xl:leading-[78px] leading-normal text-[32px]  text-center md:text-left ">Find & Hire Top Talented <br class="block xl:hidden" /> From The World.</h1>
+            <p class="xl:w-[438px] md:w-[300px] text-center md:text-left md:mt-[20px] mt-4 text-[14px] font-inter font-normal text-rum">Most talented employees and world class companies here</p>
+            <div class="flex justify-center md:justify-between items-center md:w-[300px] xl:w-[321px] xl:mt-8 md:mt-6 mt-4 gap-x-4 xl:gap-x-0">
                 <h3 class="text-dark-indigo text-[24px] font-inter font-semibold">Looking for?</h3>
                 <div class="flex">
                     <div class="flex items-center me-4">
@@ -140,83 +149,33 @@
 
             <!-- search form -->
             
-<form class="mt-8">   
+<form class="xl:mt-8 mt-6">   
     
-    <div class="relative">
+    <div class="relative flex justify-center items-center">
         <!-- <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
         </div> -->
-        <input type="search" id="default-search" class="block w-[570px] py-4 ps-5 font-inter text-[16px] font-medium text-dark-indigo border border-[#e9e9e9] rounded-md bg-white outline-none placeholder:text-[16px] placeholder:font-inter placeholder:font-medium placeholder:text-[#ACACAC] shadow-[] stroke-[#E9E9E9] shadow-custom" placeholder="Job title, keywords, or category" required>
+        <input type="search" id="default-search" class="block xl:w-[570px] md:w-full w-[400px] py-4 xl:ps-5 ps-3 font-inter text-[16px] font-medium text-dark-indigo border border-[#e9e9e9] rounded-md bg-white outline-none xl:placeholder:text-[16px] md:placeholder:text-sm placeholder:font-inter placeholder:font-medium placeholder:text-[#ACACAC] shadow-[] stroke-[#E9E9E9] shadow-custom" placeholder="Job title, keywords, or category" required>
         
-        <button type="submit" class="text-white absolute end-5 bottom-2 bg-bluish-purple font-inter font-medium text-[18px] focus:outline-none focus:ring-blue-300 rounded-[4px] px-5 py-2">Search</button>
+        <button type="submit" class="text-white absolute xl:right-4 xl:bottom-2 bottom-2 md:right-2 right-24 bg-bluish-purple font-inter font-medium text-[18px] focus:outline-none focus:ring-blue-300 rounded-[4px] px-5 py-2">Search</button>
     </div>
 </form>
 
         </div>
         <!-- right column -->
-        <div class="w-1/2">
-            <!-- shape -->
-            <div class="absolute left-1/2 top-16">
-                <img src="./assets/shape/hero-shape-2.png" alt="">
+        <div class="md:w-1/2 w-full order-1 md:order-2">
+            <div>
+                <img src="./assets/image/Hero.webp" alt="Hero-Image">
             </div>
-            <!--image-1-->
-            <div class="absolute right-[310px] top-32">
-                <img src="./assets/image/hero-1.png" alt="">
-            </div>
-            <!--world class talented btn-->
-            <div class="flex absolute right-[230px] top-6 z-10 w-[230px] h-[68px] bg-white border border-[#E9E9E9] justify-center items-center shadow-custom rounded-[4px]">
-                <div class="w-10 h-10 rounded-full bg-[#ECF0FF] flex justify-center items-center mr-[14px]">
-                    <img src="./assets/icon/right-mark.svg" alt="">
-                </div>
-                <div>
-                    <h6 class="text-dark-indigo text-[16px] font-jakarta font-medium">World Class Talent</h6>
-                </div>
-            </div>
-            <!--image-2-->
-            <div class="absolute right-16 top-0">
-                <img src="./assets/image/hero-2.png" alt="">
-            </div>
-            <!--image-3-->
-            <div class="absolute right-28 top-48 z-10">
-                <img src="./assets/image/hero-3.png" alt="">
-            </div>
-            <!-- shape-2 -->
-            <div class="absolute top-[275px] right-16">
-                <img src="./assets/shape/hero-shape-1.png" alt="">
-            </div>
-            <!--15k+ talent-->
-            <div class=" flex flex-col absolute right-60 top-[390px] z-10 w-[196px] h-[103px] bg-white border border-[#E9E9E9] p-[14px] shadow-custom rounded-[4px]">
-                <div>
-                    <h6 class="text-dark-indigo text-[18px] font-jakarta font-medium">15k+ Talent</h6>
-                </div>
-                <div class="flex mt-[10px]">
-                    <div class="border border-white w-10 h-10 rounded-full">
-                        <img src="./assets/image/hero-4.png" alt="">
-                    </div>
-                    <div class="border border-white w-10 h-10 -ml-2 rounded-full">
-                        <img src="./assets/image/hero-5.png" alt="">
-                    </div>
-                    <div class="border border-white w-10 h-10 -ml-2 rounded-full">
-                        <img src="./assets/image/hero-6.png" alt="">
-                    </div>
-                    <div class="border border-white w-10 h-10 -ml-2 rounded-full">
-                        <img src="./assets/image/hero-7.png" alt="">
-                    </div>
-                    <div class="border border-white w-10 h-10 -ml-2 rounded-full flex justify-center items-center bg-[#ECF0FF] text-dark-indigo text-[20px] font-inter font-medium">
-                        +
-                    </div>
-
-                </div>
-            </div>
-
-
         </div>
     </div>
 </section>
 
+
+
 <!--Brand section-->
 
 <section class="w-full bg-[#F3F5ff]">
-    <div class="w-1170 mx-auto h-[128px] flex flex-col md:flex-row justify-between items-center">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto h-[128px] flex flex-row justify-between items-center px-8 xl:px-0 gap-x-4 md:gap-x-8 xl:gap-x-0">
         <div>
             <img src="./assets/brand/Airbnb Logo.png" alt="">
         </div>
@@ -245,22 +204,22 @@
 
 <!--card section-->
 
-<section class="mb-[119px] relative">
+<section class="xl:mb-[119px] mb-16 relative">
     <!--shape-->
-    <div class="absolute left-0 top-1/2 -z-10">
+    <div class="absolute left-0 top-1/2 -z-10 hidden xl:block">
         <img src="./assets/shape/Rectangle 29.png" alt="" class="">
     </div>
 
     <!--card-text-section-->
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 w-full mx-auto flex flex-row justify-between px-8 xl:px-0">
         <!--left column-->
-        <div class="mt-[120px]">
-            <h2 class="text-dark-indigo text-[40px] font-jakarta font-semibold leading-[56px] w-[396px] h-[86px]">High Demanding Job Category.</h2>
+        <div class="xl:mt-[120px] mt-16 md:mt-20">
+            <h2 class="text-dark-indigo xl:text-[40px] md:text-[34px] text-xl leading-normal font-jakarta font-semibold md:leading-[56px] xl:w-[396px] w-full">High Demanding Job Category.</h2>
         </div>
         <!--right column-->
-        <div class="mt-[160px]">
-            <div class="flex justify-between items-center w-[225px] h-6">
-                <a href="#" class="text-[#6942FF] opacity-[90%] text-[18px] font-jakarta font-medium">Explore All Categories</a>
+        <div class="xl:mt-[160px] mt-16 md:mt-32">
+            <div class="flex justify-between items-center md:w-[225px] w-full">
+                <a href="#" class="text-[#6942FF] opacity-[90%] md:text-[18px] font-jakarta font-medium ">Explore All Categories</a>
                 <img src="./assets/icon/Arrow Right.svg" alt="" class="mt-1">
             </div>
         </div>
@@ -268,55 +227,55 @@
 
     <!--first-card-section-->
 
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between mt-[60px]" >
+    <div class="md:w-full md:container lg:full lg:container xl:w-1170 mx-auto flex flex-col md:flex-row justify-between mt-[60px] px-8 xl:px-0" >
         <!--card-1-->
         <div class="card">
-            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center mt-8 ml-6">
+            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mt-8 md:ml-6">
                 <img src="./assets/icon/Design & Development.svg" alt="" class="">
             </div>
-            <div class="mt-6 ml-6 w-[201px]">
-                <h4 class="text-dark-indigo text-[22px] font-jakarta font-medium">Design & Development</h4>
+            <div class="md:mt-6 mt-4 md:ml-6 xl:w-[201px]">
+                <h4 class="text-dark-indigo xl:text-[22px] md:text-base text-2xl font-jakarta font-medium text-center md:text-left">Design & Development</h4>
             </div>
-            <div class="mt-8 ml-6">
+            <div class="md:mt-8 mt-4 md:ml-6">
                 <p class="text-[16px] font-inter font-medium text-monsoon">72+ Active Jobs</p>
             </div>
 
         </div>
         <!--card-2-->
         <div class="card">
-            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center mt-8 ml-6">
+            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mt-8 md:ml-6">
                 <img src="./assets/icon/Management & Solutions.svg" alt="" class="">
             </div>
-            <div class="mt-6 ml-6 w-[201px]">
-                <h4 class="text-dark-indigo text-[22px] font-jakarta font-medium">Management & Solutions</h4>
+            <div class="md:mt-6 mt-4 md:ml-6 xl:w-[201px] w-full">
+                <h4 class="text-dark-indigo xl:text-[22px] md:text-base text-2xl font-jakarta font-medium text-center md:text-left">Management & Solutions</h4>
             </div>
-            <div class="mt-8 ml-6">
+            <div class="md:mt-8 mt-4 md:ml-6">
                 <p class="text-[16px] font-inter font-medium text-monsoon">92+ Active Jobs</p>
             </div>
 
         </div>
         <!--card-3-->
         <div class="card">
-            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center mt-8 ml-6">
+            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mt-8 md:ml-6">
                 <img src="./assets/icon/Business & Marketing.svg" alt="" class="">
             </div>
-            <div class="mt-6 ml-6 w-[201px]">
-                <h4 class="text-dark-indigo text-[22px] font-jakarta font-medium">Business & Marketing</h4>
+            <div class="md:mt-6 mt-4 md:ml-6 xl:w-[201px] w-full">
+                <h4 class="text-dark-indigo xl:text-[22px] md:text-base text-2xl font-jakarta font-medium text-center md:text-left">Business & Marketing</h4>
             </div>
-            <div class="mt-8 ml-6">
+            <div class="md:mt-8 mt-4 md:ml-6">
                 <p class="text-[16px] font-inter font-medium text-monsoon">52+ Active Jobs</p>
             </div>
 
         </div>
         <!--card-4-->
         <div class="card card_js hover:bg-bluish-purple transition duration-700 ease-in-out">
-            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center mt-8 ml-6">
+            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mt-8 md:ml-6">
                 <img src="./assets/icon/Customer Help & Support.svg" alt="" class="">
             </div>
-            <div class="mt-6 ml-6 w-[201px]">
-                <h4 class="text-dark-indigo text-[22px] font-jakarta font-medium ">Customer Help & Support</h4>
+            <div class="md:mt-6 mt-4 md:ml-6 xl:w-[201px] w-full">
+                <h4 class="text-dark-indigo xl:text-[22px] md:text-base text-2xl font-jakarta font-medium text-center md:text-left">Customer Help & Support</h4>
             </div>
-            <div class="mt-8 ml-6">
+            <div class="md:mt-8 mt-4 md:ml-6">
                 <p class="text-[16px] font-inter font-medium text-monsoon">102+ Active Jobs</p>
             </div>
 
@@ -324,62 +283,62 @@
     </div>
 
     <!--second-card-section-->
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between mt-[30px]" >
+    <div class="md:w-full md:container lg:full lg:container xl:w-1170 mx-auto flex flex-col md:flex-row justify-between md:mt-[30px] px-8 xl:px-0" >
         <!--card-1-->
         <div class="card">
-            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center mt-8 ml-6">
+            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mt-8 md:ml-6">
                 <img src="./assets/icon/Research & Experience.svg" alt="" class="">
             </div>
-            <div class="mt-6 ml-6 w-[201px]">
-                <h4 class="text-dark-indigo text-[22px] font-jakarta font-medium">Research & Experience</h4>
+            <div class="md:mt-6 mt-4 md:ml-6 xl:w-[201px] w-full">
+                <h4 class="text-dark-indigo xl:text-[22px] md:text-base text-2xl font-jakarta font-medium text-center md:text-left">Research & Experience</h4>
             </div>
-            <div class="mt-8 ml-6">
+            <div class="md:mt-8 mt-4 md:ml-6">
                 <p class="text-[16px] font-inter font-medium text-monsoon">32+ Active Jobs</p>
             </div>
 
         </div>
         <!--card-2-->
         <div class="card">
-            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center mt-8 ml-6">
+            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mt-8 md:ml-6">
                 <img src="./assets/icon/Accounting & Management.svg" alt="" class="">
             </div>
-            <div class="mt-6 ml-6 w-[201px]">
-                <h4 class="text-dark-indigo text-[22px] font-jakarta font-medium">Accounting & Management</h4>
+            <div class="md:mt-6 mt-4 md:ml-6 xl:w-[201px] w-full">
+                <h4 class="text-dark-indigo xl:text-[22px] md:text-base text-2xl font-jakarta font-medium text-center md:text-left">Accounting & Management</h4>
             </div>
-            <div class="mt-8 ml-6">
+            <div class="md:mt-8 mt-4 md:ml-6">
                 <p class="text-[16px] font-inter font-medium text-monsoon">72+ Active Jobs</p>
             </div>
 
         </div>
         <!--card-3-->
         <div class="card">
-            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center mt-8 ml-6">
+            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mt-8 md:ml-6">
                 <img src="./assets/icon/Business Solution & Marketing.svg" alt="" class="">
             </div>
-            <div class="mt-6 ml-6 w-[201px]">
-                <h4 class="text-dark-indigo text-[22px] font-jakarta font-medium">Business Solution & Marketing</h4>
+            <div class="md:mt-6 mt-4 md:ml-6 xl:w-[201px] w-full">
+                <h4 class="text-dark-indigo xl:text-[22px] md:text-base text-2xl font-jakarta font-medium text-center md:text-left">Business Solution & Marketing</h4>
             </div>
-            <div class="mt-8 ml-6">
+            <div class="md:mt-8 mt-4 md:ml-6">
                 <p class="text-[16px] font-inter font-medium text-monsoon">82+ Active Jobs</p>
             </div>
 
         </div>
         <!--card-4-->
         <div class="card card_js hover:bg-bluish-purple transition duration-700 ease-in-out">
-            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center mt-8 ml-6">
+            <div class="w-12 h-12 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mt-8 md:ml-6">
                 <img src="./assets/icon/Video Edition & 3D Art.svg" alt="" class="">
             </div>
-            <div class="mt-6 ml-6 w-[201px]">
-                <h4 class="text-dark-indigo text-[22px] font-jakarta font-medium ">Video Edition & 3D Art</h4>
+            <div class="md:mt-6 mt-4 md:ml-6 xl:w-[201px] w-full">
+                <h4 class="text-dark-indigo xl:text-[22px] md:text-base text-2xl font-jakarta font-medium text-center md:text-left">Video Edition & 3D Art</h4>
             </div>
-            <div class="mt-8 ml-6">
+            <div class="md:mt-8 mt-4 md:ml-6">
                 <p class="text-[16px] font-inter font-medium text-monsoon">62+ Active Jobs</p>
             </div>
 
         </div>
     </div>
     <!--shape-2-->
-    <div class="absolute right-[20px] bottom-[-125px] -z-10 w-[180px] h-[180px]">
+    <div class="absolute right-[20px] bottom-[-125px] -z-10 w-[180px] h-[180px] hidden xl:block">
         <img src="./assets/shape/High Demanding Job Category-shape.png" alt="">
     </div>
 </section>
@@ -387,75 +346,78 @@
 <!--Get Over 50,000+ Talented Expert In Jobfin-section.-->
 
 <section>
-    <div class="container mx-auto md:pl-14 flex flex-col md:flex-row justify-between">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto flex flex-col md:flex-row justify-between px-8 xl:px-0 md:items-center">
 
         <!--left-part-->
-        <div class="w-1/2 my-[130px]">
+        <div class="md:my-[130px] md:w-1/2">
             <!--heading-->
-            <div class="w-[535px]">
-                <h2 class="text-dark-indigo text-[40px] font-jakarta font-semibold leading-[56px]">Get Over 50,000+ Talented Expert In Jobfin.</h2>
+            <div class="xl:w-[535px] w-full">
+                <h2 class="text-dark-indigo xl:text-[40px] md:text-[34px] font-jakarta font-semibold xl:leading-[56px] text-[32px] leading-normal text-center md:text-left">Get Over 50,000+ Talented Expert In Jobfin.</h2>
             </div>
             <!--paragraph-->
-            <div class="w-[527px] mt-[24px]">
-                <p class="text-rum text-[16px] font-inter font-normal leading-[26px]">Find the top 3% experts from around the world right here. Recruit the best and most experienced employee for your company or business from our experts. Find your expert with a seamless search.</p>
+            <div class="xl:w-[527px] w-full mt-[24px]">
+                <p class="text-rum text-[16px] font-inter font-normal leading-[26px] text-center md:text-left">Find the top 3% experts from around the world right here. Recruit the best and most experienced employee for your company or business from our experts. Find your expert with a seamless search.</p>
             </div>
 
             <!--icon-with-text-->
             <div class="mt-[24px]">
-                <div class="flex justify-between items-center w-[230px] h-12">
+                <div class="flex md:justify-between items-center md:w-[230px] h-12 w-full justify-center gap-x-4 md:gap-x-0">
                     <div class="w-7 h-7 rounded-full bg-[#ECF0FF] flex items-center justify-center">
                         <img src="./assets/icon/right-mark.svg" alt="">
                     </div>
                     <p class="text-dark-indigo text-[18px] font-jakarta font-medium">Seamless Searching</p>
                 </div>
-                <div class="flex justify-between items-center w-[286px] h-12">
-                    <div class="w-7 h-7 rounded-full bg-[#ECF0FF] flex items-center justify-center">
+                <div class="flex md:justify-between justify-center items-center md:w-[286px] h-12 w-full gap-x-4 md:gap-x-0">
+                    <div class="w-7 h-7 rounded-full bg-[#ECF0FF] flex items-center justify-center ml-14 md:ml-0">
                         <img src="./assets/icon/right-mark.svg" alt="">
                     </div>
                     <p class="text-dark-indigo text-[18px] font-jakarta font-medium">Will get expert of the world</p>
                 </div>
-                <div class="flex justify-between items-center w-[304px] h-12">
-                    <div class="w-7 h-7 rounded-full bg-[#ECF0FF] flex items-center justify-center">
+                <div class="flex md:justify-between justify-center items-center md:w-[304px] w-full h-12 gap-x-4 md:gap-x-0">
+                    <div class="w-7 h-7 rounded-full bg-[#ECF0FF] flex items-center justify-center ml-20 md:ml-0">
                         <img src="./assets/icon/right-mark.svg" alt="">
                     </div>
                     <p class="text-dark-indigo text-[18px] font-jakarta font-medium">Wide range of job categories</p>
                 </div>
             </div>
             <!--button-->
-            <div class="mt-[40px]">
+            <div class="md:mt-[40px] mt-6 flex justify-center items-center md:justify-start md:items-start">
                 <a href="#" class="btn-primary">Find Experts</a>
             </div>
 
         </div>
 
         <!--right-part-->
-        <div class="w-1/2 my-[130px]">
-            <div class="flex justify-between items-center">
-                <div class="w-1/2 pl-8 relative">
+        <div class="md:my-[130px] md:w-1/2">
+            <div class="mt-16 md:mt-0">
+                <img src="./assets/image/talentedpeople.webp" alt="" class="w-full">
+            </div>
+            <!-- <div class="flex justify-between items-center md:gap-x-8">
+                <div class="pl-8 relative">
                     <img src="./assets/image/Get Over-img-1.png" alt="" class="w-[238px] h-[284px]">
                     <img src="./assets/shape/get-over-shape.png" alt="" class="absolute left-20 bottom-[-60px]">
                 </div>
-                <div class="w-1/2">
+                <div>
                     <img src="./assets/image/Get Over-img-2.png" alt="" class="w-[238px] h-[211px]">
                     <img src="./assets/image/Get Over-img-3.png" alt="" class="mt-8 w-[238px] h-[211px]">
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
 
 <!--Our latest job opportunities-->
 
-<section class="mb-[130px]">
+<section class="md:mb-[130px]">
     <!--text-section-->
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 w-full mx-auto flex justify-between items-center px-8 xl:px-0">
         <!--left column-->
-        <div>
-            <h2 class="text-dark-indigo text-[40px] font-jakarta font-semibold leading-[56px] w-[531px]">Our latest job opportunities</h2>
+        <div class="mt-16 md:mt-0">
+            <h2 class="text-dark-indigo xl:text-[40px] font-jakarta font-semibold xl:leading-[56px] xl:w-[531px] md:w-80 text-xl leading-normal md:text-[34px]">Our latest job opportunities</h2>
         </div>
         <!--right column-->
-        <div>
-            <div class="flex justify-between items-center w-[169px] h-6">
+        <div class="mt-16 md:mt-0">
+            <div class="flex justify-between items-center md:w-[169px] h-6">
                 <a href="#" class="text-[#6942FF] opacity-[90%] text-[18px] font-jakarta font-medium">Explore All Jobs</a>
                 <img src="./assets/icon/Arrow Right.svg" alt="" class="mt-1">
             </div>
@@ -464,19 +426,19 @@
 
     <!--Our latest job opportunities-card-section-1-->
 
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between mt-[60px]">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto flex flex-col md:flex-row justify-between md:mt-[60px] mt-10 px-8 xl:px-0">
         <!-- card-1 -->
         <div class="card-2">
 
             <!--job-address-->
-            <div class="flex justify-between items-center mt-[30px] mx-7">
-                <div class="flex justify-between w-[200px]"">
-                    <div class="w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center">
+            <div class="flex justify-between items-center mt-[30px] xl:mx-7 md:mx-4 mx-7">
+                <div class="flex justify-between xl:w-[200px] items-center">
+                    <div class="xl:w-16 xl:h-16 md:w-12 md:h-12 w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mr-1 xl:mr-0 mr-3">
                         <img src="./assets/icon/google.svg" alt="">
                     </div>
                     <div>
-                        <h6 class="text-[#303030] text-[20px] font-jakarta font-medium">Google</h6>
-                        <p class="text-rum text-[16px] font-inter font-normal mt-1">New York, USA</p>
+                        <h6 class="text-[#303030] text-[20px] md:text-base xl:text-[20px] font-jakarta font-medium">Google</h6>
+                        <p class="text-rum xl:text-[16px] md:text-xs text-base font-inter font-normal xl:mt-3 md:mt-2 mt-3">New York, USA</p>
                     </div>
 
                 </div>
@@ -489,23 +451,23 @@
             </div>
 
             <!--job-position-->
-            <div class="mx-7 mt-6">
-                <h5 class="text-dark-indigo text-[22px] font-jakarta font-medium">Software Engineer</h5>
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
+                <h5 class="text-dark-indigo xl:text-[22px] md:text-base text-[22px] font-jakarta font-medium">Software Engineer</h5>
                 <p class="text-monsoon text-[14px] font-inter font-normal mt-3">Development - Full Time</p>
             </div>
             <!--job description-->
-            <div class="mx-7 mt-6">
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
                 <p class="text-monsoon text-[16px] font-inter font-normal">We're looking for some experts to lead our company's entire software design & development... <a href="#" class="text-[#BFBFBF]">See More</a></p>
             </div>
             <!--job-salary and apply btn-->
 
-            <div class="flex justify-between items-center mx-7 mt-10">
+            <div class="flex justify-between items-center xl:mx-7 md:mx-4 mx-7 mt-10">
                 <div>
                     <p class="text-[14px] text-dark-indigo font-inter font-normal">$50k-90k/<span class="text-monsoon">Yearly</span></p>
                 </div>
 
                 <div>
-                    <a href="#" class="py-3 px-5 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
+                    <a href="#" class="xl:py-3 xl:px-5 py-3 px-5 md:py-2 md:px-3 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
                 </div>
             </div>
         </div>
@@ -515,14 +477,14 @@
         <div class="card-2">
 
             <!--job-address-->
-            <div class="flex justify-between items-center mt-[30px] mx-7">
-                <div class="flex justify-between w-[200px]"">
-                    <div class="w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center">
+            <div class="flex justify-between items-center mt-[30px] xl:mx-7 md:mx-4 mx-7">
+                <div class="flex justify-between xl:w-[200px] items-center"">
+                    <div class="xl:w-16 xl:h-16 md:w-12 md:h-12 w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mr-1 xl:mr-0 mr-3">
                         <img src="./assets/icon/apple.svg" alt="">
                     </div>
                     <div>
-                        <h6 class="text-[#303030] text-[20px] font-jakarta font-medium">Apple</h6>
-                        <p class="text-rum text-[16px] font-inter font-normal mt-1">New York, USA</p>
+                        <h6 class="text-[#303030] text-[20px] md:text-base xl:text-[20px] font-jakarta font-medium">Apple</h6>
+                        <p class="text-rum xl:text-[16px] md:text-xs text-base font-inter font-normal xl:mt-3 md:mt-2 mt-3">New York, USA</p>
                     </div>
 
                 </div>
@@ -535,23 +497,23 @@
             </div>
 
             <!--job-position-->
-            <div class="mx-7 mt-6">
-                <h5 class="text-dark-indigo text-[22px] font-jakarta font-medium">Product Designer</h5>
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
+                <h5 class="text-dark-indigo xl:text-[22px] md:text-base text-[22px] font-jakarta font-medium">Product Designer</h5>
                 <p class="text-monsoon text-[14px] font-inter font-normal mt-3">Experience Design - Remote</p>
             </div>
             <!--job description-->
-            <div class="mx-7 mt-6">
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
                 <p class="text-monsoon text-[16px] font-inter font-normal">We're looking for some experts to lead our company's entire software design & development... <a href="#" class="text-[#BFBFBF]">See More</a></p>
             </div>
             <!--job-salary and apply btn-->
 
-            <div class="flex justify-between items-center mx-7 mt-10">
+            <div class="flex justify-between items-center xl:mx-7 md:mx-4 mx-7 mt-10">
                 <div>
                     <p class="text-[14px] text-dark-indigo font-inter font-normal">$80k-100k/<span class="text-monsoon">Yearly</span></p>
                 </div>
 
                 <div>
-                    <a href="#" class="py-3 px-5 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
+                    <a href="#" class="xl:py-3 xl:px-5 py-3 px-5 md:py-2 md:px-3 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
                 </div>
             </div>
         </div>
@@ -562,14 +524,14 @@
         <div class="card-2">
 
             <!--job-address-->
-            <div class="flex justify-between items-center mt-[30px] mx-7">
-                <div class="flex justify-between w-[200px]"">
-                    <div class="w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center">
+            <div class="flex justify-between items-center mt-[30px] xl:mx-7 md:mx-4 mx-7">
+                <div class="flex justify-between xl:w-[200px] items-center"">
+                    <div class="xl:w-16 xl:h-16 md:w-12 md:h-12 w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mr-1 xl:mr-0 mr-3">
                         <img src="./assets/icon/paypal.svg" alt="">
                     </div>
                     <div>
-                        <h6 class="text-[#303030] text-[20px] font-jakarta font-medium">PayPal</h6>
-                        <p class="text-rum text-[16px] font-inter font-normal mt-1">New York, USA</p>
+                        <h6 class="text-[#303030] text-[20px] md:text-base xl:text-[20px] font-jakarta font-medium">PayPal</h6>
+                        <p class="text-rum xl:text-[16px] md:text-xs text-base font-inter font-normal xl:mt-3 md:mt-2 mt-3">New York, USA</p>
                     </div>
 
                 </div>
@@ -582,23 +544,23 @@
             </div>
 
             <!--job-position-->
-            <div class="mx-7 mt-6">
-                <h5 class="text-dark-indigo text-[22px] font-jakarta font-medium">Account Manager</h5>
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
+                <h5 class="text-dark-indigo xl:text-[22px] md:text-base text-[22px] font-jakarta font-medium">Account Manager</h5>
                 <p class="text-monsoon text-[14px] font-inter font-normal mt-3">Accounting - Full Time</p>
             </div>
             <!--job description-->
-            <div class="mx-7 mt-6">
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
                 <p class="text-monsoon text-[16px] font-inter font-normal">We're looking for some experts to lead our company's entire software design & development... <a href="#" class="text-[#BFBFBF]">See More</a></p>
             </div>
             <!--job-salary and apply btn-->
 
-            <div class="flex justify-between items-center mx-7 mt-10">
+            <div class="flex justify-between items-center xl:mx-7 md:mx-4 mx-7 mt-10">
                 <div>
                     <p class="text-[14px] text-dark-indigo font-inter font-normal">$70k-100k/<span class="text-monsoon">Yearly</span></p>
                 </div>
 
                 <div>
-                    <a href="#" class="py-3 px-5 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
+                    <a href="#" class="xl:py-3 xl:px-5 py-3 px-5 md:py-2 md:px-3 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
                 </div>
             </div>
         </div>
@@ -606,19 +568,19 @@
 
     <!--Our latest job opportunities-card-section-2-->
 
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between mt-[30px]">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto flex flex-col md:flex-row justify-between md:mt-[30px] px-8 xl:px-0">
         <!-- card-1 -->
         <div class="card-2">
 
             <!--job-address-->
-            <div class="flex justify-between items-center mt-[30px] mx-7">
-                <div class="flex justify-between w-[200px]"">
-                    <div class="w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center">
+            <div class="flex justify-between items-center mt-[30px] xl:mx-7 md:mx-4 mx-7">
+                <div class="flex justify-between xl:w-[200px] items-center"">
+                    <div class="xl:w-16 xl:h-16 md:w-12 md:h-12 w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mr-1 xl:mr-0 mr-3">
                         <img src="./assets/icon/instagram.svg" alt="">
                     </div>
                     <div>
-                        <h6 class="text-[#303030] text-[20px] font-jakarta font-medium">Instagram</h6>
-                        <p class="text-rum text-[16px] font-inter font-normal mt-1">New York, USA</p>
+                        <h6 class="text-[#303030] text-[20px] md:text-base xl:text-[20px] font-jakarta font-medium">Instagram</h6>
+                        <p class="text-rum xl:text-[16px] md:text-xs text-base font-inter font-normal xl:mt-3 md:mt-2 mt-3">New York, USA</p>
                     </div>
 
                 </div>
@@ -631,23 +593,23 @@
             </div>
 
             <!--job-position-->
-            <div class="mx-7 mt-6">
-                <h5 class="text-dark-indigo text-[22px] font-jakarta font-medium">Product Manager</h5>
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
+                <h5 class="text-dark-indigo xl:text-[22px] md:text-base text-[22px] font-jakarta font-medium">Product Manager</h5>
                 <p class="text-monsoon text-[14px] font-inter font-normal mt-3">Sales & Marketing - Remote</p>
             </div>
             <!--job description-->
-            <div class="mx-7 mt-6">
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
                 <p class="text-monsoon text-[16px] font-inter font-normal">We're looking for some experts to lead our company's entire software design & development... <a href="#" class="text-[#BFBFBF]">See More</a></p>
             </div>
             <!--job-salary and apply btn-->
 
-            <div class="flex justify-between items-center mx-7 mt-10">
+            <div class="flex justify-between items-center xl:mx-7 md:mx-4 mx-7 mt-10">
                 <div>
                     <p class="text-[14px] text-dark-indigo font-inter font-normal">$50k-90k/<span class="text-monsoon">Yearly</span></p>
                 </div>
 
                 <div>
-                    <a href="#" class="py-3 px-5 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
+                    <a href="#" class="xl:py-3 xl:px-5 py-3 px-5 md:py-2 md:px-3 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
                 </div>
             </div>
         </div>
@@ -657,14 +619,14 @@
         <div class="card-2">
 
             <!--job-address-->
-            <div class="flex justify-between items-center mt-[30px] mx-7">
-                <div class="flex justify-between w-[200px]"">
-                    <div class="w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center">
+            <div class="flex justify-between items-center mt-[30px] xl:mx-7 md:mx-4 mx-7">
+                <div class="flex justify-between xl:w-[200px] items-center"">
+                    <div class="xl:w-16 xl:h-16 md:w-12 md:h-12 w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mr-1 xl:mr-0 mr-3">
                         <img src="./assets/icon/youtube.svg" alt="">
                     </div>
                     <div>
-                        <h6 class="text-[#303030] text-[20px] font-jakarta font-medium">YouTube</h6>
-                        <p class="text-rum text-[16px] font-inter font-normal mt-1">New York, USA</p>
+                        <h6 class="text-[#303030] text-[20px] md:text-base xl:text-[20px] font-jakarta font-medium">YouTube</h6>
+                        <p class="text-rum xl:text-[16px] md:text-xs text-base font-inter font-normal xl:mt-3 md:mt-2 mt-3">New York, USA</p>
                     </div>
 
                 </div>
@@ -677,23 +639,23 @@
             </div>
 
             <!--job-position-->
-            <div class="mx-7 mt-6">
-                <h5 class="text-dark-indigo text-[22px] font-jakarta font-medium">Visual Designer</h5>
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
+                <h5 class="text-dark-indigo xl:text-[22px] md:text-base text-[22px] font-jakarta font-medium">Visual Designer</h5>
                 <p class="text-monsoon text-[14px] font-inter font-normal mt-3">UI Design - Full Time</p>
             </div>
             <!--job description-->
-            <div class="mx-7 mt-6">
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
                 <p class="text-monsoon text-[16px] font-inter font-normal">We're looking for some experts to lead our company's entire software design & development... <a href="#" class="text-[#BFBFBF]">See More</a></p>
             </div>
             <!--job-salary and apply btn-->
 
-            <div class="flex justify-between items-center mx-7 mt-10">
+            <div class="flex justify-between items-center xl:mx-7 md:mx-4 mx-7 mt-10">
                 <div>
                     <p class="text-[14px] text-dark-indigo font-inter font-normal">$70k-100k/<span class="text-monsoon">Yearly</span></p>
                 </div>
 
                 <div>
-                    <a href="#" class="py-3 px-5 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
+                    <a href="#" class="xl:py-3 xl:px-5 py-3 px-5 md:py-2 md:px-3 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
                 </div>
             </div>
         </div>
@@ -704,14 +666,14 @@
         <div class="card-2">
 
             <!--job-address-->
-            <div class="flex justify-between items-center mt-[30px] mx-7">
-                <div class="flex justify-between w-[200px]"">
-                    <div class="w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center">
+            <div class="flex justify-between items-center mt-[30px] xl:mx-7 md:mx-4 mx-7">
+                <div class="flex justify-between xl:w-[200px] items-center"">
+                    <div class="xl:w-16 xl:h-16 md:w-12 md:h-12 w-16 h-16 rounded-[4px] bg-[#ECF0FF] flex justify-center items-center md:mr-1 xl:mr-0 mr-3">
                         <img src="./assets/icon/pinterest.svg" alt="">
                     </div>
                     <div>
-                        <h6 class="text-[#303030] text-[20px] font-jakarta font-medium">Pinterest</h6>
-                        <p class="text-rum text-[16px] font-inter font-normal mt-1">New York, USA</p>
+                        <h6 class="text-[#303030] text-[20px] md:text-base xl:text-[20px] font-jakarta font-medium">Pinterest</h6>
+                        <p class="text-rum xl:text-[16px] md:text-xs text-base font-inter font-normal xl:mt-3 md:mt-2 mt-3">New York, USA</p>
                     </div>
 
                 </div>
@@ -724,23 +686,23 @@
             </div>
 
             <!--job-position-->
-            <div class="mx-7 mt-6">
-                <h5 class="text-dark-indigo text-[22px] font-jakarta font-medium">Customer Support Agent</h5>
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
+                <h5 class="text-dark-indigo xl:text-[22px] md:text-base text-[22px] font-jakarta font-medium">Customer Support Agent</h5>
                 <p class="text-monsoon text-[14px] font-inter font-normal mt-3">Help & Support - Remote</p>
             </div>
             <!--job description-->
-            <div class="mx-7 mt-6">
+            <div class="xl:mx-7 md:mx-4 mx-7 mt-6">
                 <p class="text-monsoon text-[16px] font-inter font-normal">We're looking for some experts to lead our company's entire software design & development... <a href="#" class="text-[#BFBFBF]">See More</a></p>
             </div>
             <!--job-salary and apply btn-->
 
-            <div class="flex justify-between items-center mx-7 mt-10">
+            <div class="flex justify-between items-center xl:mx-7 md:mx-4 mx-7 mt-10">
                 <div>
                     <p class="text-[14px] text-dark-indigo font-inter font-normal">$50k-80k/<span class="text-monsoon">Yearly</span></p>
                 </div>
 
                 <div>
-                    <a href="#" class="py-3 px-5 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
+                    <a href="#" class="xl:py-3 xl:px-5 py-3 px-5 md:py-2 md:px-3 rounded bg-bluish-purple text-center text-white text-[16px] font-inter font-medium">Apply</a>
                 </div>
             </div>
         </div>
@@ -750,29 +712,29 @@
 
 <!--Find your need with jobfi-->
 
-<section class="mb-[130px]">
-    <div class="w-1170 mx-auto">
-        <h2 class="text-dark-indigo text-[40px] font-jakarta font-semibold text-center">Find your need with jobfi</h2>
+<section class="md:mb-[130px]">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto px-8 xl:px-0 mt-16">
+        <h2 class="text-dark-indigo text-[40px] font-jakarta font-semibold text-center">Find your need with jobfin</h2>
     </div>
-    <div class="w-1170 mx-auto h-[192px] flex flex-col md:flex-row bg-bluish-purple rounded-xl justify-center items-center gap-x-[120px] mt-10">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 md:mx-auto md:h-[192px] flex bg-bluish-purple rounded-xl justify-center items-center xl:gap-x-[120px] md:gap-x-10 mt-10 flex-col md:flex-row gap-y-8 md:gap-y-0 mx-8 py-10 md:py-0">
         <!--600k-->
         <div class="flex flex-col justify-center items-center">
-            <h3 class="text-white text-[52px] font-jakarta font-semibold">600k+</h3>
+            <h3 class="text-white text-[52px] font-jakarta font-semibold"><span class="num" data-val="600">000</span>k+</h3>
             <p class="text-center text-[18px] text-white font-jakarta font-normal">Active Experts</p>
         </div>
         <!--30k-->
         <div class="flex flex-col justify-center items-center">
-            <h3 class="text-white text-[52px] font-jakarta font-semibold">30k+</h3>
+            <h3 class="text-white text-[52px] font-jakarta font-semibold"><span class="num" data-val="30">00</span>k+</h3>
             <p class="text-center text-[18px] text-white font-jakarta font-normal">Job opportunities</p>
         </div>
         <!--13k-->
         <div class="flex flex-col justify-center items-center">
-            <h3 class="text-white text-[52px] font-jakarta font-semibold">13k+</h3>
+            <h3 class="text-white text-[52px] font-jakarta font-semibold"><span class="num" data-val="13">00</span>k+</h3>
             <p class="text-center text-[18px] text-white font-jakarta font-normal">Job Posted</p>
         </div>
         <!--90%-->
         <div class="flex flex-col justify-center items-center">
-            <h3 class="text-white text-[52px] font-jakarta font-semibold">90%</h3>
+            <h3 class="text-white text-[52px] font-jakarta font-semibold"><span class="num" data-val="90">00</span>%</h3>
             <p class="text-center text-[18px] text-white font-jakarta font-normal">Hire Success Rate</p>
         </div>
 
@@ -781,84 +743,112 @@
 
 <!--testimonial-->
 
-<section class="overflow-x-hidden pb-[129px]">
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between items-center">
-        <!--left-part-->
-        <div>
-            <h2 class="text-dark-indigo text-[40px] font-jakarta font-semibold">People say about us</h2>
-        </div>
-
-        <!--right-part-->
-        <div>
-            <div class="flex justify-between items-center w-[108px]">
-                <div class="">
-                    <img src="./assets/icon/Group 4169.svg" alt="">
+<section>
+    <div class="swiper md:pb-[130px] pb-16">
+        <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto flex justify-between items-center px-8 xl:px-0 mt-16 md:mt-0">
+        
+            <div>
+                <h2 class="text-dark-indigo md:text-[40px] text-xl font-jakarta font-semibold">People say about us</h2>
+            </div>
+    
+            
+            <div>
+                <div class="flex justify-between items-center w-[108px]">
+                    
+                    <div class="cursor-pointer swiper-btn-prev">
+                        <img src="./assets/icon/Group 4169.svg" alt="">
+                    </div>
+                    
+                    <div class="cursor-pointer swiper-btn-next">
+                        <img src="./assets/icon/Group 4168.svg" alt="">
+                    </div>
+                    
                 </div>
-                <div class="">
-                    <img src="./assets/icon/Group 4168.svg" alt="">
-                </div>
-                
             </div>
         </div>
-    </div>
-
-    <div class="w-[1506px] ml-[90px] flex flex-col md:flex-row justify-between items-center mt-14">
-        <!--left-->
-        <div class="w-[733px]">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto flex md:justify-between items-center mt-14 px-8 xl:px-0">
+          <!-- Slides-1 -->
+        <div class="swiper-slide w-[750px]">
             <div class="flex items-center bg-white shadow-custom py-10 px-10 rounded-md">
-                <div class="w-full">
-                    <img src="./assets/image/testimonial-img-1.png" alt="" class="">
-                </div>
-
-                <div class="ml-4">
-                    <div class="w-[120px] h-[24px]">
-                        <img src="./assets/icon/5-star-icon.svg" alt="">
+                    <div class="w-full">
+                        <img src="./assets/image/testimonial-img-1.png" alt="" class="">
                     </div>
-                    <div class="mt-4">
-                        <p class="text-rum text-[16px] font-inter font-normal leading-[26px]">Jobfi is a great platform for your career opportunity. Here you will find yourself among the experienced and get lost of help in finding your dream job.</p>
+    
+                    <div class="ml-4">
+                        <div class="w-[120px] h-[24px]">
+                            <img src="./assets/icon/5-star-icon.svg" alt="">
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-rum text-[16px] font-inter font-normal leading-[26px]">Jobfi is a great platform for your career opportunity. Here you will find yourself among the experienced and get lost of help in finding your dream job.</p>
+                        </div>
+                        <div class="mt-8">
+                            <h5 class="text-dark-indigo text-[20px] font-jakarta font-semibold">Carl Beyer</h5>
+                            <p class="text-rum text-[16px] font-inter font-normal mt-1">UX Designer</p>
+                        </div>
                     </div>
-                    <div class="mt-8">
-                        <h5 class="text-dark-indigo text-[20px] font-jakarta font-semibold">Carl Beyer</h5>
-                        <p class="text-rum text-[16px] font-inter font-normal mt-1">UX Designer</p>
-                    </div>
-                </div>
-
+    
             </div>
-
         </div>
-        <div class="w-[733px]">
+          <!--slide-2-->
+        <div class="swiper-slide w-[750px]">
             <div class="flex items-center bg-white shadow-custom py-10 px-10 rounded-md">
-                <div class="w-full">
-                    <img src="./assets/image/testimonial-img-2.png" alt="" class="">
-                </div>
-
-                <div class="ml-4">
-                    <div class="w-[120px] h-[24px]">
-                        <img src="./assets/icon/5-star-icon.svg" alt="">
+                    <div class="w-full">
+                        <img src="./assets/image/testimonial-img-1.png" alt="" class="">
                     </div>
-                    <div class="mt-4">
-                        <p class="text-rum text-[16px] font-inter font-normal leading-[26px]">Jobfi is a great platform for your career opportunity. Here you will find yourself among the experienced and get lost of help in finding your dream job.</p>
+    
+                    <div class="ml-4">
+                        <div class="w-[120px] h-[24px]">
+                            <img src="./assets/icon/5-star-icon.svg" alt="">
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-rum text-[16px] font-inter font-normal leading-[26px]">Jobfi is a great platform for your career opportunity. Here you will find yourself among the experienced and get lost of help in finding your dream job.</p>
+                        </div>
+                        <div class="mt-8">
+                            <h5 class="text-dark-indigo text-[20px] font-jakarta font-semibold">Carl Beyer</h5>
+                            <p class="text-rum text-[16px] font-inter font-normal mt-1">UX Designer</p>
+                        </div>
                     </div>
-                    <div class="mt-8">
-                        <h5 class="text-dark-indigo text-[20px] font-jakarta font-semibold">Angle Steeve</h5>
-                        <p class="text-rum text-[16px] font-inter font-normal mt-1">Developer</p>
-                    </div>
-                </div>
-
+    
             </div>
-
         </div>
-    </div>
+          <!--slide-3-->
+        <div class="swiper-slide w-[750px]">
+            <div class="flex items-center bg-white shadow-custom py-10 px-10 rounded-md">
+                    <div class="w-full">
+                        <img src="./assets/image/testimonial-img-1.png" alt="" class="">
+                    </div>
+    
+                    <div class="ml-4">
+                        <div class="w-[120px] h-[24px]">
+                            <img src="./assets/icon/5-star-icon.svg" alt="">
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-rum text-[16px] font-inter font-normal leading-[26px]">Jobfi is a great platform for your career opportunity. Here you will find yourself among the experienced and get lost of help in finding your dream job.</p>
+                        </div>
+                        <div class="mt-8">
+                            <h5 class="text-dark-indigo text-[20px] font-jakarta font-semibold">Carl Beyer</h5>
+                            <p class="text-rum text-[16px] font-inter font-normal mt-1">UX Designer</p>
+                        </div>
+                    </div>
+    
+            </div>
+        </div>
+          
+        </div>
+      </div>
 
+    
 </section>
+
 
 <!--article-section-->
 
-<section class="mb-[130px]">
-   <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between items-center">
+<section class="md:mb-[130px] mb-16">
+   <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 w-full mx-auto flex justify-between items-center px-8 xl:px-0">
         <!--left column-->
         <div>
-            <h2 class="text-dark-indigo text-[40px] font-jakarta font-semibold leading-[56px] w-[531px]">News & Articles</h2>
+            <h2 class="text-dark-indigo md:text-[40px] text-xl font-jakarta font-semibold leading-[56px] md:w-[531px]">News & Articles</h2>
         </div>
         <!--right column-->
         <div>
@@ -869,11 +859,11 @@
         </div>
     </div>
 
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between items-center mt-[60px]">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto flex flex-col md:flex-row justify-between items-center mt-[60px] px-8 xl:px-0 gap-y-6 md:gap-y-0 md:gap-x-6 gap-x-0">
         <!--article-1-->
-        <div class="bg-white shadow-custom w-[370px] h-[517px] shadow-custom">
+        <div class="bg-white md:w-[370px] md:h-[517px] shadow-custom pb-4 md:pb-0 w-full">
             <div>
-                <img src="./assets/image/blog-img-1.png" alt="">
+                <img src="./assets/image/blog-img-1.png" alt="" class="w-full">
             </div>
             <div class="px-5">
                 <p class="mt-5 text-rum text-base font-inter font-normal">04 Jan 2023</p>
@@ -895,9 +885,9 @@
             </div>
         </div>
         <!--article-2-->
-        <div class="bg-white shadow-custom w-[370px] h-[517px] shadow-custom">
+        <div class="bg-white md:w-[370px] md:h-[517px] shadow-custom pb-4 md:pb-0 w-full">
             <div>
-                <img src="./assets/image/blog-img-2.png" alt="">
+                <img src="./assets/image/blog-img-2.png" alt="" class="w-full">
             </div>
             <div class="px-5">
                 <p class="mt-5 text-rum text-base font-inter font-normal">15 Jul 2023</p>
@@ -919,9 +909,9 @@
             </div>
         </div>
         <!--article-3-->
-        <div class="bg-white shadow-custom w-[370px] h-[517px] shadow-custom">
+        <div class="bg-white shadow-custom md:w-[370px] md:h-[517px] pb-4 md:pb-0 w-full">
             <div>
-                <img src="./assets/image/blog-img-3.png" alt="">
+                <img src="./assets/image/blog-img-3.png" alt="" class="w-full">
             </div>
             <div class="px-5">
                 <p class="mt-5 text-rum text-base font-inter font-normal">04 Sep 2023</p>
@@ -946,10 +936,10 @@
 </section>
 
 <!--newsletter-section-->
-<section class="mb-[130px]">
-    <div class="w-1170 mx-auto flex flex-col justify-center items-center h-[422px] bg-bluish-purple rounded-xl">
+<section class="md:mb-[130px] mb-16 mx-8 xl:mx-0">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 md:mx-auto flex flex-col justify-center items-center md:h-[422px] h-52 bg-bluish-purple rounded-xl ">
         <div>
-            <h2 class="text-white text-[48px] leading-[62px] font-jakarta font-bold text-center w-[830px]">Subscribe now to stay informed about job trends worldwide</h2>
+            <h2 class="text-white xl:text-[48px] xl:leading-[62px] md:text-[34px] md:leading-normal text-2xl font-jakarta font-bold text-center xl:w-[830px] md:w-[600px] w-[450px]">Subscribe now to stay informed about job trends worldwide</h2>
         </div>
         <div>
             <form class="mt-8">   
@@ -957,7 +947,7 @@
                 <div class="relative">
                     <!-- <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                     </div> -->
-                    <input type="search" id="default-search" class="block w-[470px] py-4 ps-5 font-inter text-[16px] font-medium text-dark-indigo border border-[#e9e9e9] rounded-md bg-white outline-none placeholder:text-[16px] placeholder:font-inter placeholder:font-medium placeholder:text-[#ACACAC] stroke-[#E9E9E9] shadow-custom" placeholder="Your email address" required>
+                    <input type="search" id="default-search" class="w-[350px] md:w-[470px] py-4 ps-5 font-inter text-[16px] font-medium text-dark-indigo border border-[#e9e9e9] rounded-md bg-white outline-none placeholder:text-[16px] placeholder:font-inter placeholder:font-medium placeholder:text-[#ACACAC] stroke-[#E9E9E9] shadow-custom" placeholder="Your email address" required>
                     
                     <button type="submit" class="text-white absolute right-2 bottom-2 bg-black font-inter font-medium text-[18px] focus:outline-none focus:ring-blue-300 rounded-[4px] px-5 py-2">Subscribe</button>
                 </div>
@@ -969,16 +959,16 @@
 <!--footer-->
 
 <footer class="border-t-[1px] border-[#D9DBE9]">
-    <div class="w-1170 mx-auto flex flex-col md:flex-row justify-between pt-[120px] pb-[107px] border-b-[1px] border-[#D9DBE9]">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto flex flex-col md:flex-row md:justify-between justify-center items-center md:items-start md:pt-[120px] md:pb-[107px] border-b-[1px] border-[#D9DBE9] px-8 xl:px-0 py-16 md:gap-x-6">
         <!--column-1-->
-        <div>
-            <div>
+        <div class="border-b border-[#D9DBE9] pb-6 md:border-none">
+            <div class="flex justify-center items-center md:items-start md:justify-start">
                 <img src="./assets/logo/Group 4174.svg" alt="">
             </div>
             <div class="mt-6">
-                <p class="text-rum text-[18px] font-inter font-normal leading-[30px] w-[312px]">Best place to finding and applying to cutting-edge startup positions.</p>
+                <p class="text-rum text-[18px] md:text-base xl:text-lg font-inter font-normal leading-[30px] xl:w-[312px] w-full text-center md:text-left">Best place to finding and applying to cutting-edge startup positions.</p>
             </div>
-            <div class="flex justify-between items-center w-[177px] mt-6">
+            <div class="flex md:justify-between items-center md:w-[177px] mt-6 justify-center w-full gap-x-4 md:gap-x-0">
                 <a href="#"><img src="./assets/icon/Facebook-footer.svg" alt=""></a>
                 <a href="#"><img src="./assets/icon/Twitter-footer.svg" alt=""></a>
                 <a href="#"><img src="./assets/icon/Instagram-footer.svg" alt=""></a>
@@ -987,79 +977,119 @@
             </div>
         </div>
         <!--column-2-->
-        <div>
+        <div class="border-b border-[#D9DBE9] py-6 md:py-0 md:border-none w-full md:w-auto">
             <div>
-                <h4 class="text-dark-indigo text-[20px] font-inter font-bold">Jobs</h4>
+                <h4 class="text-dark-indigo text-[20px] md:text-lg xl:text-xl font-inter font-bold text-center md:text-left">Jobs</h4>
             </div>
             <div class="mt-6">
-                <ul class="flex flex-col gap-4">
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Browse Jobs</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Browse Categories</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Job Alert</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Bookmark</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Updates</a></li>
+                <ul class="flex flex-col gap-4 text-center md:text-left">
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Browse Jobs</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Browse Categories</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Job Alert</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Bookmark</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Updates</a></li>
                 </ul>
             </div>
         </div>
         <!--column-3-->
-        <div>
+        <div class="border-b border-[#D9DBE9] py-6 md:py-0 md:border-none w-full md:w-auto">
             <div>
-                <h4 class="text-dark-indigo text-[20px] font-inter font-bold">Company</h4>
+                <h4 class="text-dark-indigo text-[20px] md:text-lg xl:text-xl font-inter font-bold text-center md:text-left">Company</h4>
             </div>
             <div class="mt-6">
-                <ul class="flex flex-col gap-4">
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">About</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Contact us</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Careers</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">FAQ’s</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Blog</a></li>
+                <ul class="flex flex-col gap-4 text-center md:text-left">
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">About</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Contact us</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Careers</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">FAQ’s</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Blog</a></li>
                 </ul>
             </div>
         </div>
         <!--column-4-->
-        <div>
+        <div class="border-b border-[#D9DBE9] py-6 md:py-0 md:border-none w-full md:w-auto">
             <div>
-                <h4 class="text-dark-indigo text-[20px] font-inter font-bold">Support</h4>
+                <h4 class="text-dark-indigo text-[20px] md:text-lg xl:text-xl font-inter font-bold text-center md:text-left">Support</h4>
             </div>
             <div class="mt-6">
-                <ul class="flex flex-col gap-4">
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Terms of use</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Terms & conditions</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Privacy policy</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Cookie policy</a></li>
-                    <li><a href="#" class="text-rum text-lg font-inter font-normal">Chat support</a></li>
+                <ul class="flex flex-col gap-4 text-center md:text-left">
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Terms of use</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Terms & conditions</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Privacy policy</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Cookie policy</a></li>
+                    <li><a href="#" class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">Chat support</a></li>
                 </ul>
             </div>
         </div>
         <!--column-5-->
-        <div>
+        <div class="pt-6 md:pt-0 w-full md:w-auto">
             <div>
-                <h4 class="text-dark-indigo text-[20px] font-inter font-bold">Contacts us</h4>
+                <h4 class="text-dark-indigo text-[20px] md:text-lg xl:text-xl font-inter font-bold text-center md:text-left">Contacts us</h4>
             </div>
-            <div class="mt-6">
-                <div class="w-[197px] flex justify-between items-center">
+            <div class="mt-6 flex flex-col justify-center items-center md:justify-start md:items-start">
+                <div class="xl:w-[197px] flex justify-between items-center">
                     <img src="./assets/icon/Email.svg" alt="">
-                    <p class="text-rum text-[18px] font-inter font-normal">contact@jobfin.com</p>
+                    <p class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal">contact@jobfin.com</p>
                 </div>
-                <div class="w-[170px] flex justify-between items-center mt-5">
+                <div class="xl:w-[170px] flex justify-between items-center mt-5">
                     <img src="./assets/icon/Phone.svg" alt="">
-                    <p class="text-rum text-[18px] font-inter font-normal">(414) 687 - 4980</p>
+                    <p class="text-rum text-lg md:text-base xl:text-lgfont-inter font-normal">(414) 687 - 4980</p>
                 </div>
-                <div class="w-[230px] flex items-start mt-5">
+                <div class="xl:w-[230px] flex items-start mt-5">
                     <img src="./assets/icon/location.svg" alt="">
-                    <p class="text-rum text-[18px] font-inter font-normal ml-1">3741 Goldleaf Lane Jersey City, NJ 07305</p>
+                    <p class="text-rum text-lg md:text-base xl:text-lg font-inter font-normal ml-1">3741 Goldleaf Lane Jersey City, NJ 07305</p>
                 </div>
             </div>
         </div>
     </div>
     <!--copyright-->
-    <div class="w-1170 mx-auto flex justify-center items-center py-6">
+    <div class="md:w-full md:container lg:w-full lg:container xl:w-1170 mx-auto flex justify-center items-center py-6 px-8 xl:px-0">
         <p class="text-rum text-base font-jakarta font-normal">Copyright © 2023 Ryzin Lab | All Rights Reserved</p>
     </div>
 </footer>
 
+<!--swipper-js--->
+
+<script src="./js/swiper-bundle.min.js"></script>
+
 
 <script src="./js/main.js"></script>
+
+
+
+
+
+<!-- <script type="module">
+    import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+
+const keenSlider = new KeenSlider(
+  '#keen-slider',
+  {
+    loop: true,
+    slides: {
+      origin: 'center',
+      perView: 1.25,
+      spacing: 16,
+    },
+    breakpoints: {
+      '(min-width: 1024px)': {
+        slides: {
+          origin: 'auto',
+          perView: 2.5,
+          spacing: 32,
+        },
+      },
+    },
+  },
+  []
+)
+
+const keenSliderPrevious = document.getElementById('keen-slider-previous')
+const keenSliderNext = document.getElementById('keen-slider-next')
+
+keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+keenSliderNext.addEventListener('click', () => keenSlider.next())
+</script> -->
 
   
     

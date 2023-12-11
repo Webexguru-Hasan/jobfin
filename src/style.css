@@ -43,11 +43,11 @@
     };
 
     .card {
-      @apply bg-white shadow-custom w-[270px] h-[246px] border-[#EBEBEB] rounded-md
+      @apply bg-white shadow-custom xl:w-[270px] md:w-[160px] h-[246px] w-full border-[#EBEBEB] rounded-md md:mb-0 mb-6 flex flex-col justify-center items-center md:justify-start md:items-start
     };
 
     .card-2 {
-      @apply bg-white shadow-custom w-[370px] h-[384px] border-[#EBEBEB] rounded-md
+      @apply bg-white shadow-custom xl:w-[370px] xl:h-[384px] md:w-[220px] md:h-[424px] w-full h-[360px] border-[#EBEBEB] rounded-md mb-6 md:mb-0
     };
     }
 
